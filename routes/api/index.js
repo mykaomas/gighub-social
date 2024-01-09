@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const bands = require('./bandRoutes');
-const users = require('./bandUsers');
+const users = require('./userRoutes');
 
-
+router.use('/users', users);
 router.use('/bands', bands);
-router.use('./users', users)
+
 
 module.exports = router;
