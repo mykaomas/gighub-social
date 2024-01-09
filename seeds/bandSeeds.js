@@ -1,9 +1,11 @@
 const sequelize = require('../config/connection');
 const Band = require('../models/Bands');
-const User = require('../models/Users')
+const User = require('../models/Users');
+const Post = require('../models/Posts');
 
 const bandSeedData = require('./bandSeedData.json');
-const bandUserData = require('./bandUserData.json')
+const bandUserData = require('./bandUserData.json');
+const postSeedData = require('./postSeedData.json');
 
 // Add the `async` keyword to the function `seedDatabase` to make Asynchronous.
 const seedDatabase = async () => {
@@ -19,7 +21,11 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  await Post.bulkCreate(postSeedData);
+
   await Band.bulkCreate(bandSeedData);
+
+  
 
 
   process.exit(0);
