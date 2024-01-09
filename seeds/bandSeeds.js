@@ -1,7 +1,9 @@
 const sequelize = require('../config/connection');
 const Band = require('../models/Bands');
+const User = require('../models/Users')
 
 const bandSeedData = require('./bandSeedData.json');
+const bandUserData = require('./bandUserData.json')
 
 // Add the `async` keyword to the function `seedDatabase` to make Asynchronous.
 const seedDatabase = async () => {
@@ -10,6 +12,13 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
   // Once JavaScript recogonizes the `await` keyword it waits for the promise to be fufilled before moving on.
+  
+
+  await User.bulkCreate(bandUserData, {
+    individualHooks: true,
+    returning: true,
+  });
+
   await Band.bulkCreate(bandSeedData);
 
 
