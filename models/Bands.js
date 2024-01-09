@@ -5,7 +5,7 @@ class Bands extends Model {}
 
 Bands.init(
   {
-    band_id: {
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
