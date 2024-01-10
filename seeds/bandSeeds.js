@@ -27,7 +27,6 @@ const seedDatabase = async () => {
   await Post.bulkCreate(postSeedData);
 
   await Band.bulkCreate(bandSeedData);
-  await BandUsers.bulkCreate(bandUserSeedData);
 
   process.exit(0);
 };
