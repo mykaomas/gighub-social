@@ -1,6 +1,9 @@
 const sequelize = require('../config/connection');
+//models
 const Band = require('../models/Bands');
+const BandUsers = require('../models/BandUsers');
 const User = require('../models/Users');
+//seed dataconst User = require('../models/Users');
 const Post = require('../models/Posts');
 
 const bandSeedData = require('./bandSeedData.json');
@@ -24,9 +27,6 @@ const seedDatabase = async () => {
   await Post.bulkCreate(postSeedData);
 
   await Band.bulkCreate(bandSeedData);
-
-  
-
 
   process.exit(0);
 };
