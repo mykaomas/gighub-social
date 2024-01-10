@@ -1,0 +1,12 @@
+[
+    {
+      "username": "larry",
+      "email": "sublime@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "username": "frank",
+      "email": "rhcp@gmail.com",
+      "password": "password12345"
+    }
+]
