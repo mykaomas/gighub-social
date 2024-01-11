@@ -1,10 +1,8 @@
 function formLogin() {
     let emailelement = document.getElementById("emaillogin");
     let passwordelement = document.getElementById("passwordlogin");
-    let valid = validateLogin(emailelement.value, passwordelement.value);
-    if(valid){
-        window.location = "/bands";
-    }
+   validateLogin(emailelement.value, passwordelement.value);
+    
    
 }
 
@@ -16,8 +14,8 @@ function formLogin() {
         let data = JSON.stringify(postdata);
         let url = "http://localhost:3001/api/users/login";
 
-        console.log(data);
-        const response =  fetch(url, {
+
+                fetch(url, {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             mode: "cors", // no-cors, *cors, same-origin
             cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -28,19 +26,16 @@ function formLogin() {
             },
             redirect: "follow", // manual, *follow, error
             referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-            body: data, // body data type must match "Content-Type" header
+            body: data, // body data type must match "Content-Type" header, find data in body.
           
-        }).then((response) => {
-            console.log(response.body);
-            return true;
-        }).then((res) => {
-            if (res.status === 201) {
-                console.log("Post successfully created!")
-            }
-        }).catch((error) => {
-            console.log(error)
-            return false;
-        });
+        })    .then(response => response.json())
+        .then(responseData => {
+          const loginResponse = responseData;
+          if (loginResponse.isLoggedIn){
+            window.location = "/bands";
+          }
+        })
+        .catch(error => console.error(error));
     };
 
 
