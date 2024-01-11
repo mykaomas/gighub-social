@@ -1,65 +1,69 @@
-/* body {
-    background-image: url("images/image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-#gighubhead{
-    background: orange;
+
+  header #gighubhead, header p, .chose, .btn-dark {
+    font-family: 'Roboto';
     text-align: center;
-    padding: 10px;
-    border-bottom: solid black 1px;
 }
-.homebtns{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20%;
+
+#slogan, .chose {
+    background-image: linear-gradient(45deg,#f38d72 40%, #e77541 43%, #bf5137 33%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
-#fanbandbtn{
-    background-color: grey;
-    font-size: 50px;
-    padding:30px;
-} */
 
-body{
-
+  body{
     background-image: url("images/image.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+
+  header #gighubhead {
+    color: #9a1407;
+    font-size: 10vh;
+    padding-top: 8vh;
+    font-weight: bold;
+  }
+
+  #slogan {
+    font-size: 4vh;
+    font-style: italic;
+  }
+
+  .chose {
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    font-size: 4vh;
   }
   
+  .homebtns {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+
+  }
+
+  .btn-dark {
+    margin: 0 33vh;
+    padding: 15px 30px;
+    letter-spacing: 1vh;
+    font-size: 4vh;
+    font-weight: bold;
+    background-color: #9a1407;;
+    border: 3px solid #f1813b;
+    border-radius: 1vh;
+  }
+
+  .btn-dark:hover {
+    background-color: #ffe699;
+}
+
+/* Form elements start */
   
   .card{
-  
     width: 400px;
-    border:none;
-  
+    border: 10px solid #dbb890;
+    background-color: #63473f;
+    border-radius: 20px;
   }
-  
-  
-  
-  
-  .btr{
-  
-    border-top-right-radius: 5px !important;
-  }
-  
-  
-  .btl{
-  
-    border-top-left-radius: 5px !important;
-  }
-  
-  .btn-dark {
-      color: #fff;
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-  }
-  
-  
-  .btn-dark:hover {
-      color: #fff;
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-  }
-  
   
   .nav-pills{
   
@@ -68,37 +72,105 @@ body{
   }
   
   .nav-pills .nav-link {
-      border-radius: 0px;
-          border-bottom: 1px solid #0d6efd40;
+    font-family: 'Roboto';
+    border-bottom: 3px solid #363231;
   
   }
   
   .nav-item{
-        display: table-cell;
-         background: #0d6efd2e;
+    display: table-cell;
+    background: #c3775c;
+    color: #9d7f63;
+  }
+
+  #pills-profile-tab {
+    color: #e73b28;
+    font-weight: bold;
+  }
+
+  #pills-home-tab {
+    background-color: #e73b28;
+    font-weight: bold;
+    color: #c3775c;
   }
   
   
   .form{
-  
-    padding: 10px;
-        height: 300px;
+    padding: 20px;
+    height: 300px;
+    font-family: 'Roboto';
+  }
+
+  #welcome-msg {
+    font-family: 'Roboto';
+    color: #dbb890;
   }
   
   .form input{
-  
     margin-bottom: 12px;
     border-radius: 3px;
   }
   
   
   .form input:focus{
-  
     box-shadow: none;
   }
   
   
   .form button{
-  
     margin-top: 20px;
+  }
+
+  .log-btn {
+    font-family: 'Roboto';
+    background-color: #7d6854;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    margin-left: 30%;
+    color: #9a1407;
+  }
+
+  /* Band Search Styling */
+
+  #band-back {
+    background-image: url("images/bandBack.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+
+  .music-greeting {
+    font-family: 'Roboto';
+    text-align: center;
+    margin-top: 10vh;
+    background-image: linear-gradient(45deg,#d25744 63%, #fea78d 40%, #e36e31, 70%, #ffebcf 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .form-control {
+    width: 200px;
+  }
+
+  .form-label {
+    font-family: 'Roboto';
+    font-size: 25px;
+    margin-left: 30px;
+    background-image: linear-gradient(45deg,#d25744 55%, #fea78d 40%, #e36e31 70%, #ffebcf 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .form-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  /* Band Account Styling */
+
+  #band-account {
+    background-image: url('images/bandAccount.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
   }

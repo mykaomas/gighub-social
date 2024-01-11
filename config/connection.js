@@ -3,10 +3,6 @@ require('dotenv').config();
 
 let sequelize;
 
-process.env.DB_NAME = 'band_db';
-process.env.DB_USER = 'root';
-process.env.DB_PASSWORD = 'password';
-
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
