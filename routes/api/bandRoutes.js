@@ -7,6 +7,16 @@ router.get('/', async (req, res) => {
   return res.json(bandData);
 })
 
+router.post('/search', async (req, res) => {
+const bandData = await band.findAll();
+// let bandData=  {
+//     "cityName" : "Los Angeles"
+// }
+console.log("Searching for: " +req.body.cityName);
+const result = bandData.filter((word) => word.city == req.body.cityName);
+  return res.json(result);
+})
+
 router.post('/', async (req, res) => {
   const bookData = await band.create(req.body);
 
