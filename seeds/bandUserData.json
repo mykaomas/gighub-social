@@ -1,12 +1,22 @@
 [
     {
-      "username": "larry",
+      "username": "Bradley_Nowell",
       "email": "sublime@gmail.com",
       "password": "password12345"
     },
     {
-      "username": "frank",
+      "username": "Anthony_Kiedis",
       "email": "rhcp@gmail.com",
       "password": "password12345"
-    }
+    },
+    {
+      "username": "Chris_Cornell",
+      "email": "audioslave@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "username": "Greg_Graffin",
+      "email": "badreligion@gmail.com",
+      "password": "password12345"
+    },
 ]
