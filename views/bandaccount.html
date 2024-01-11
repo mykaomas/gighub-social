@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Handlebars from a CDN -->
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <input>
+    <div id="DocumentResults"></div>
 </body>
+<script id="document-template" type="text/x-handlebars-template">
+    <div>
+        {{#each this}}
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Bands</h2>
+                        {{#DocumentList}}
+                            <p>{{band}} at {{city}}</p>
+                        {{/DocumentList}}
+                </div>
+            </div>
+        {{/each}}
+        
+            <p>There are no documents available at this time</p>
+        
+    </div>
+</script>
 </html>
