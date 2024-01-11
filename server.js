@@ -3,6 +3,7 @@ const express = require('express');
 const routes = require('./routes');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const autocomplete = require('autocompleter');
 
 const sequelize = require('./config/connection');
 // const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -39,6 +40,12 @@ sequelize.sync({ force: false }).then(() => {
   app.get('/bands', function(req, res){
     res.sendFile(__dirname + '/views/bands.html');
     });
+  app.get('/bandaccount', function(req, res){
+    res.sendFile(__dirname + '/views/bandaccount.html');
+  });
+  app.get('/bandsearch', function(req, res){
+    res.sendFile(__dirname + '/views/bandsearch.html');
+  });
 //serves up the scripts folder for javascript files
   app.use("/scripts", express.static(__dirname + '/scripts'));
 //note, when referencing in html, do not put stylesheets in the path because express already knows to look in the folder.

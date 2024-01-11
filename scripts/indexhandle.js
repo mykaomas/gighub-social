@@ -3,7 +3,14 @@ function formLogin() {
     let passwordelement = document.getElementById("passwordlogin");
    validateLogin(emailelement.value, passwordelement.value);
     
-   
+
+}
+
+function band(){
+  window.location = "/bands";
+}
+function fan(){
+  window.location ="/bandsearch";
 }
 
  function validateLogin(email, password){
@@ -32,7 +39,7 @@ function formLogin() {
         .then(responseData => {
           const loginResponse = responseData;
           if (loginResponse.isLoggedIn){
-            window.location = "/bands";
+            window.location = "/bandaccount"; // changed from bands to bandaccount!
           }
         })
         .catch(error => console.error(error));
