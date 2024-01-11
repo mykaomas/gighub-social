@@ -38,5 +38,50 @@
         "band": "Fall Out Boy",
         "city": "Chicago",
         "genre": "punk"
+    },
+    {
+        "band": "Spoon",
+        "city": "Austin",
+        "genre": "rock"
+    },
+    {
+        "band": "Black Pumas",
+        "city": "Austin",
+        "genre": "soul"
+    },
+    {
+        "band": "The Sword",
+        "city": "Austin",
+        "genre": "metal"
+    },
+    {
+        "band": "Bad Livers",
+        "city": "Austin",
+        "genre": "punk"
+    },
+    {
+        "band": "The Jesus Lizard",
+        "city": "Austin",
+        "genre": "rock"
+    },
+    {
+        "band": "Kiss",
+        "city": "New York",
+        "genre": "rock"
+    },
+    {
+        "band": "Sonic Youth",
+        "city": "New York",
+        "genre": "rock"
+    },
+    {
+        "band": "Spin Doctors",
+        "city": "New York",
+        "genre": "rock"
+    },
+    {
+        "band": "The Walkmen",
+        "city": "New York",
+        "genre": "rock"
     }
 ]
