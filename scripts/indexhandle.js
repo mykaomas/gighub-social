@@ -9,6 +9,9 @@ function formLogin() {
 function band(){
   window.location = "/bands";
 }
+function fan(){
+  window.location ="/bandsearch";
+}
 
  function validateLogin(email, password){
         let postdata = {
