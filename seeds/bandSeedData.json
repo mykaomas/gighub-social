@@ -8,5 +8,35 @@
         "band": "Red Hot Chili Peppers",
         "city": "Los Angeles",
         "genre": "rock"
+    },
+    {
+        "band": "Audioslave",
+        "city": "Los Angeles",
+        "genre": "rock"
+    },
+    {
+        "band": "Bad Religion",
+        "city": "Los Angeles",
+        "genre": "punk"
+    },
+    {
+        "band": "The Smashing Pumpkins",
+        "city": "Chicago",
+        "genre": "rock"
+    },
+    {
+        "band": "Chicago",
+        "city": "Chicago",
+        "genre": "rock"
+    },
+    {
+        "band": "Earth, Wind & Fire",
+        "city": "Chicago",
+        "genre": "funk"
+    },
+    {
+        "band": "Fall Out Boy",
+        "city": "Chicago",
+        "genre": "punk"
     }
 ]
