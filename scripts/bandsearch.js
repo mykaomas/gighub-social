@@ -1,26 +1,5 @@
-// import autocomplete from 'autocompleter';
-// const { response } = require('express');
-
-//const { json } = require("sequelize");
-
 let cityform = document.getElementById('form12');
 
-// autocomplete({
-//     input: input,
-// })
-
-// autocomplete({
-//     input: cityform,
-//     fetch: function(text, update) {
-//         text = text.toLowerCase();
-//         // you can also use AJAX requests instead of preloaded data
-//         var suggestions = bands.filter(band => band.city.toLowerCase().startsWith(text))
-//         update(suggestions);
-//     },
-//     onSelect: function(item) {
-//         input.value = item.label;
-//     }
-// }); 
 
 
 
