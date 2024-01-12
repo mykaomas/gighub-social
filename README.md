@@ -44,8 +44,7 @@ You can see a live demo of GigHub [link here]([add link](https://gighub-social-1
 
 4. After a city is chosen you'll be asked to choose a genre of music you'd like to enjoy
 
-5. You'll be presented with a list of bands in the city selected<img width="1086" alt="Screen Shot 2024-01-11 at 9 12 06 PM" src="https://github.com/gyerkes/gighub-social/assets/122703042/9bff09c5-9c4e-4594-98d8-1959b0ed949a">
-
+5. You'll be presented with a list of bands in the city selected
 
 6. We'll offer the option to save the band 
 
