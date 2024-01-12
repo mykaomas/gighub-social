@@ -31,8 +31,7 @@ There is no installation required to use this platform. Following the link below
 ![Search for band](./public/css/images/Screen%20Shot%202024-01-11%20at%209.11.53%20PM.png)
 
 
-You can see a live demo of GigHub [link here]([add link](https://gighub-social-1f9d38728ec1.herokuapp.com/)).
-
+You can see a live demo of GigHub [[link here](https://gighub-social-1f9d38728ec1.herokuapp.com/)
 ## How to Use
 1. Visit the GigHub website.
 
