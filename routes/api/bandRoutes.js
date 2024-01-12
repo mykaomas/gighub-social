@@ -5,7 +5,23 @@ router.get('/', async (req, res) => {
   const bandData = await band.findAll();
 
   return res.json(bandData);
-})
+});
+
+// router.post('/search', async (req, res) => {
+//   try {
+//     const searchData = await band.findAll({where: {city: req.body.city} });
+    
+//     if (!searchData) {
+//       res.status(404).json({ message: "Bands not found in searched city, please try again."})
+//       return;
+//     }
+
+//   return res.json(searchData)
+
+//   } catch (err) {
+//     res.status(404).json(err);
+//   }
+// });
 
 router.post('/search', async (req, res) => {
 const bandData = await band.findAll();
@@ -18,7 +34,7 @@ const result = bandData.filter((word) => word.city == req.body.cityName);
 })
 
 router.post('/', async (req, res) => {
-  const bookData = await band.create(req.body);
+  const bandData = await band.create(req.body);
 
   return res.json(bandData);
 });
