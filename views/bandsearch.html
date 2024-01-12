@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "./css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <title>Artist Search</title>
+</head>
+<body id="band-back">
+    <section class="music-greeting">
+            <h1>Hello Music Lover!</h1>
+            <p>Get ready to turn up the volume and dive into the groove.</p>
+            <p>Whether you're into head-banging rock, soothing jazz, or beats that make you move, you're in the right place.</p>
+            <p>Feel the rhythm, embrace the melody, and let the music carry you away!</p>
+    </section>
+    <div id = "container">
+    <div class="form-outline" data-mdb-input-init>
+        <input list="band-list" type="text" id="form12" class="form-control" />
+        <datalist id="band-list"></datalist>
+        <button type="button" class="btn btn-primary" data-mdb-ripple-init onclick="searchband()">Search</button>
+        <label class="form-label" for="form12"></label>
+      </div>
+    </div>
+      <div id="DocumentResults"></div>
+
+      <script src="scripts/bandsearch.js"></script>
+</body>
+<script id="document-template" type="text/x-handlebars-template">
+    <div>
+        <h2>Bands In Searched City:</h2>
+
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Band Name</th>
+      <th scope="col">City</th>
+      <th scope="col">Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this}}
+    <tr>
+      <td>{{band}}</td>
+      <td>{{city}}</td>
+      <td><button class="btn btn-primary" type="submit" onclick="bandpage('{{band}}')">Search</button></td>
+    </tr>
+ {{/each}}
+  </tbody>
+</table>
+        
+        
+    </div>
+</script>
+</html>
