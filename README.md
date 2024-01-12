@@ -65,6 +65,8 @@ You can see a live demo of GigHub [link here](https://gighub-social-1f9d38728ec1
 * MySQL
 * Path
 * Bootstrap
+* Nodemon
+* Heroku
 
 ## Credits
 
